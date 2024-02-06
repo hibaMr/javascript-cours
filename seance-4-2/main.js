@@ -9,7 +9,7 @@ let day = new Date();
 let jour;
 
 
-switch (day.getDay()) {
+switch (day.getDay()) {           //switch ==> cas
     case 0:
         jour = "dimanche"
         break;
@@ -61,6 +61,5 @@ console.log(branche)
 
 
 
-// structures itérative  ==> les boucles
 
-console.log("==> 2-) structures itérative ")
+

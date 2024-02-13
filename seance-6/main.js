@@ -1,9 +1,9 @@
-//les fonction flechees (arrow function)
 
-// console.log(              ==>les fonction flechees (arrow function))
+//les Fonctions flechees
 
 
-//les donctions flechees
+//fonction anonyme
+console.log("                   ==> les fonction flechees")
    let a = function (){
         return console.log("helloo!!javascript")
     };
@@ -11,7 +11,7 @@
     let greet=() => console.log("helloo!!python")
 
     let nomcomplet=(nom,prenom) => {
-      let fullnam=nom+""+prenom;
+      let fullnam = nom + " " + prenom;
         return fullnam
     }
     
@@ -43,7 +43,7 @@ jours.map(function (item){
 })
 
 
-jours.map((item) => {        // ==> fonction fichier
+jours.map((item) => {        // ==> fonction flichier
 
     if (item === "jeudi"){
         item = item + "* jour ferier"       
@@ -94,7 +94,7 @@ nameAge = stagiaires.map((noms) => {            //kadire lina boucle
     return {nom : noms ,age: noms.age}
 })
 
-console.log(nameAge) 
+console.log(nameAge)  
 
 // exemple
 

@@ -1,0 +1,9 @@
+.section-2{
+    height: 150px;
+    width: 500px;
+    background-color: blueviolet;
+}
+
+.encadrer{
+    border: solid 2px blue;
+}

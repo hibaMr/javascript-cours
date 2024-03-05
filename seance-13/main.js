@@ -21,21 +21,21 @@ stagiares.forEach(function(itemValue , itemIndex , stArray){
     console.log(itemValue);
 }) 
 
-const copieStagiares = stagiare.map(function(itemValue,itemIndex){
+const copieStagiares = stagiares.map(function(itemValue,itemIndex){
     return itemValue + "DEV" ;
 })
 console.log(copieStagiares);
 
-stagiares.push("nada");
+stagiares.push("nada");             // add in the last value
 console.log(stagiares);
 
 stagiares.unshift("ghezlane");        // add in the first value
 console.log(stagiares);
 
-stagiares.pop();
+stagiares.pop();                    //supremer derniere element
 console.log(stagiares);
 
-stagiares.shift();
+stagiares.shift();              //supremer premiere element
 console.log(stagiares);
 
 const modules = [ "ALGO" , "HTML" , "CSS" , "POO"];
@@ -43,22 +43,31 @@ const modules = [ "ALGO" , "HTML" , "CSS" , "POO"];
 modules.splice(1,1);     //Supression ensemble des valeurs
 console.log(modules);
 
-modules.sort();
+console.log("             ====> sort")
+modules.sort();             //==>pour trées
 console.log(modules);
 
+
+console.log("             ====> reverse")
 modules.reverse();
 console.log(modules);
 
-let algoMd = modules.find((item)=>{
+
+console.log("             ====> find")
+let algoMd = modules.find((item)=>{         //hade lfonction(item) katsema => callback function
     return item === "ALGO" ;
 })
 console.log(algoMd);
 
+
+console.log("             ====> filter")
 let filterTest = modules.filter((item)=>{
     return item === "ALGO" ;
 })
 console.log(filterTest);
 
+
+console.log("             ====> findIndex")
 let findIndexTest = modules.findIndex((item)=>{
     return item === "ALGO" ;
 })

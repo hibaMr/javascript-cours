@@ -1,0 +1,22 @@
+{
+    "stagiare":[
+        {
+            "id":4,
+            "nom":"KHALID",
+            "age":17
+        },
+        {
+            "id":6,
+            "nom":"KARAMAT",
+            "age":38
+        },
+        {
+            "id":8,
+            "nom":"ELADNANI",
+            "age":34
+        }
+    ],
+    "module"[
+        {"id":9,"branche":"ID"},{"id":19,"branche":"DD"}
+    ],
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class=" bg-dark">
+    <div class="container">
+        <h2 class="text-center text-light  bg-dark">Employees CRUD</h2>
+        <div class="mb-3 text-light">
+            <div id="error" class="badge"></div>
+        </div>
+            <div class="mb-3 text-light">
+                <label for="cin" class="form-label">Employee ID :</label>
+                <input type="text" class="form-control border" id="id" value="">
+                <div class="para"></div>
+            </div>
+            <div class="mb-3 text-light">
+                <label for="name" class="form-label">Name :</label>
+                <input type="text" class="form-control border" id="name" value="">
+                <div class="para"></div>
+            </div>
+            <div class="mb-3 text-light">
+                <label for="last-name" class="form-label">Last Name :</label>
+                <input type="text" class="form-control border" id="last-name" value="">
+                <div class="para"></div>
+            </div>
+            <div class="mb-3 text-light">
+                <label for="depa" class="form-label">Departement :</label>
+                <select name="depa" id="depa" class="form-select"></select>
+            </div>
+            <div class="mb-3 text-light">
+                <label for="branche" class="form-label">Age :</label>
+                <input type="text" class="form-control border" id="age" value="">
+                <div class="para"></div>
+            </div>
+            <div class="mb-3 text-light">
+                <label for="module" class="form-label">adress :</label>
+                <input type="text" class="form-control border" id="adress" value="">
+                <div class="para"></div>
+            </div>
+            <button class="btn btn-primary mb-3" id="submit">SUBMIT</button>
+            <button class="btn btn-secondary mb-3" id="reset">RESET</button>
+        
+
+        <table class="table table-bordered mt-3 " id="table-employe">
+            <tr>
+                <th class="text-light bg-dark">CIN</th><th class="text-light bg-dark">Name</th><th class="text-light bg-dark">Last Name</th><th class="text-light bg-dark">Age</th><th class="text-light bg-dark">Adresse</th><th class="text-light bg-dark">supprimer</th><th class="text-light bg-dark">modiffier</th>
+            </tr>
+
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

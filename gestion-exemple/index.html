@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestion du stagaiare</h1>
+        <form action="" id="productsForm">
+            <div class="mb-3">
+                <label>Search</label>
+                <input type="text" id="search-input" class="form-control">
+                <button id="btnSearch" class="btn btn-secondary">Search</button>
+            </div>
+            <div class="mb-3">
+                <label for="activite" class="form-label">Activite</label>
+                <select name="activite" class="form-select" id="activites-select">
+
+                </select>
+            </div>
+            <div class="mb-3">
+                <label>Nombre du jours</label>
+                <input type="number" id="jours-input" class="form-control" >
+            </div>
+            <div class="mb-3">
+                <label>Date debut</label>
+                <input type="date" id="date-input" class="form-control" >
+            </div>
+            <div class="mb-3">
+                <label>Valide</label>
+                <input type="checkbox" id="valide-input" class="form-check-input" >
+            </div>
+            <button class="btn btn-primary" id="ajouter" >Ajouter</button>
+    </form>
+    <table id="stagaiare-table" class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prenom</th>
+            <th scope="col">Activite</th>
+            <th scope="col">Nombre du joues</th>
+            <th scope="col">Date activite</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+            
+        </tbody>
+      </table>
+      <button class="btn btn-primary" id="supprimer" >supprimer</button>
+      <button class="btn btn-primary" id="modifier" >modifier</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

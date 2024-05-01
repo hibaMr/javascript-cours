@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+}
+.container{
+    width: 500px;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    font-size: 35px;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+.game{
+    width: 92%;
+    padding: 20px;
+    height: 30px;
+    background-color: rgba(137, 43, 226, 0.877);
+    
+}
+span{
+    color: yellow;
+}
+.box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.enfent{
+    width: 56px;
+    height: 50px;
+    padding: 50px;
+    margin: 5px;
+    background-color: blueviolet;
+    border: 4 solid rgb(65, 3, 123);
+    font-size: 40px;
+}
+.enfent:hover{
+    background-color: darkmagenta;
+}

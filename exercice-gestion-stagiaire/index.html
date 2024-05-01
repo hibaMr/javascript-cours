@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+        <div class="">
+            <h1 class="bg-primary text-center text-light p-3">GESTION DE STAGIAIRES</h1>
+        </div>
+    <div class="container">
+        
+        <fieldset class="container mt-4">
+            <legend>GESTION DE STAGIAIRES</legend>
+            <div class="mb-3">
+                <label for="cin" class="form-label">CIN :</label>
+                <input type="text" class="form-control" id="cin">
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name :</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+                <label for="last-name" class="form-label">Last Name :</label>
+                <input type="text" class="form-control" id="last-name">
+            </div>
+            <div class="mb-3">
+                <label for="branche" class="form-label">Branche :</label>
+                <select name="brenche" id="brenche" class="form-select"></select>
+            </div>
+            <div class="mb-3">
+                <label for="module" class="form-label">Module :</label>
+                <select name="module" id="module" class="form-select"></select>
+            </div>
+            <button class="btn btn-success mb-3">SUBMIT</button>
+            <button class="btn btn-info mb-3">RESET</button>
+            <button class="btn btn-warning mb-3">MODIFY</button>
+            <button class="btn btn-danger mb-3">DELETE</button>
+        </fieldset>
+
+        <table class="table table-bordered mt-3" id="table-stagiaires">
+            <tr>
+                <th>CIN</th><th>Name</th><th>Last Name</th><th>Branche</th><th>Module</th>
+            </tr>
+
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

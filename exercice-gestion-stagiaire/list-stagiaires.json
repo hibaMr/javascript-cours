@@ -1,0 +1,44 @@
+{
+    "branches" : [
+        {
+            "id" : 1,
+            "branche":"developpment digital"
+        },
+        {
+            "id" : 3,
+            "branche":"medcin"
+        },
+        {
+            "id" : 7,
+            "branche":"gestion d'entreprise"
+        },
+        {
+            "id" : 8,
+            "branche":"economique"
+        },
+        {
+            "id" : 2,
+            "branche":"Infrasticture digital"
+        }
+    ],
+
+    "modules" : [
+        {
+            "id" : 1,
+            "module" : "CSS"
+        },
+        {
+            "id" : 2,
+            "module" : "HTML"
+        },
+        {
+            "id" : 3,
+            "module" : "JAVASCRIPT"
+        },
+        {
+            "id" : 4,
+            "module" : "PHP"
+        }
+    ]
+
+}

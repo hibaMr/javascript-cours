@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Commander les TVs</h1>
+        <form action="" id="productsForm">
+            <div class="mb-3">
+                <label>TV</label>
+                <input type="text" id="tv-input" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label>Qantite</label>
+                <input type="number" id="qantite" class="form-control" >
+            </div>
+            <button class="btn btn-primary" id="ajouter" >Ajouter au panier</button>
+            <h1>Panier de Commandes</h1>
+    </form>
+    <table  id="tv-table" class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Reference</th>
+            <th scope="col">Qantite</th>
+            <th scope="col">Image</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+            
+        </tbody>
+      </table>
+        <div class=" row mb-3">
+            <div class="col">
+                <label>Total HT :</label>
+            </div>
+            <div class="col">
+                <input type="text" id="ht-input" class="form-control">
+            </div>
+            
+        </div>
+        <div class=" row mb-3">
+            <div class="col">
+                <label>Total TTC :</label>
+            </div>
+            <div class="col">
+                <input type="text" id="ttc-input" class="form-control">
+            </div>
+            
+        </div>
+      <button class="btn btn-success" id="commander" >Commander</button>
+    
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

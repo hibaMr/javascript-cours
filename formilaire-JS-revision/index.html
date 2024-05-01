@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestion du stagaiare</h1>
+        <form action="" id="productsForm">
+            <div class="mb-3">
+                <label>Code :</label>
+                <input type="text" id="code-input" class="form-control">
+                <span id="error"></span>
+            </div>
+            <div class="mb-3">
+                <label for="activite" class="form-label">Nom :</label>
+                <input type="text" id="nom-input" class="form-control">
+                <span id="error"></span>
+            </div>
+            <div class="mb-3">
+                <label>Prenom :</label>
+                <input type="text" id="prenom-input" class="form-control" >
+                <span id="error"></span>
+            </div>
+            <div class="mb-3">
+                <label>Branche :</label>
+                <select name="module" id="branche-select"  class="form-select" >
+                    <option value="Developpment Degital">Developpment Degital</option>
+                    <option value="Medcin">Medcin</option>
+                    <option value="Infrastricture">Infrastricture</option>
+                </select>
+            </div>
+            <div class="mb-3" id="check">
+                <label>Module :</label>
+                <div>
+                    <input type="checkbox" class="form-check-input" id="html-input" name="module" value="html">
+                    <label for="femme-input" class="form-check-label">HTML</label>
+                </div>
+                <div>
+                    <input type="checkbox" class="form-check-input" id="css-input" name="module" value="css">
+                    <label for="homme-input" class="form-check-label">CSS</label>
+                </div>
+                <div>
+                    <input type="checkbox" class="form-check-input" id="java-input" name="module" value="javascript">
+                    <label for="homme-input" class="form-check-label">JAVASCRIPT</label>
+                </div>
+                
+            </div>
+            <div class="mb-3" id="radio">
+                <label>Genre :</label>
+                <div>
+                    <label class="form-check-label">Femme</label>
+                    <input type="radio" name="genre" class="form-check-input" value="femme" id="femme-input">
+                </div>
+                <div>
+                    <label class="form-check-label">Homme</label>
+                    <input type="radio" name="genre" class="form-check-input" value="homme" id="homme-input">
+                </div>
+                
+            </div>
+            
+            <button class="btn btn-success" id="ajouter" >Ajouter</button>
+            <button class="btn btn-warning" id="vider">Vider</button>
+            <button class="btn btn-success" id="enregistrer" >Enregistrer</button>
+    </form>
+    <table id="stagaiare-table" class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Code</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prenom</th>
+            <th scope="col">Branche</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+            
+        </tbody>
+      </table>
+      <button class="btn btn-danger" id="supprimer" >supprimer</button>
+      <button class="btn btn-primary" id="modifier" >modifier</button>
+      <button class="btn btn-primary" id="editer" >Editer</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

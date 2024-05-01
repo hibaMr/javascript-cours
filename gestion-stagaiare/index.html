@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestion du stagaiare</h1>
+        <form action="" id="productsForm">
+            <div class="mb-3">
+                <label>Search</label>
+                <input type="text" id="inpSearch" class="form-control" onkeyup="search()">
+                <button id="btnSearch" class="btn btn-secondary">Search</button>
+            </div>
+            <div class="mb-3">
+                <label>Nombre du jours</label>
+                <input type="text" id="inpJour" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="module" class="form-label">Module</label>
+                <select name="module" class="form-select" id="module" onclick="modules()">
+
+                </select>
+            </div>
+            <button class="btn btn-primary" id="ajouter" onclick="ajouter()">Ajouter</button>
+    </form>
+    <table id="stagaiare-table" class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prenom</th>
+            <th scope="col">Module</th>
+            <th scope="col">Nombre du joues</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+            
+        </tbody>
+      </table>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
